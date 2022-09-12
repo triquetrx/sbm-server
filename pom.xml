@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.cognizant</groupId>
 	<artifactId>sbm-server-microservice</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>sbm-server-microservice</name>
 	<description>account-microservice-spring-boot</description>
 	<properties>
