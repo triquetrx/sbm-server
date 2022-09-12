@@ -16,7 +16,7 @@ phases:
       -mvn compile
       -mvn package
       -echo Building the docker image...
-      -docker tag service/booksapp $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/service-registry:sbm-server
+      -docker tag service/booksapp $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/sbm-server-z:sbm-server
   post_build:
     commands:
       -echo Build completed on `data`
@@ -24,4 +24,4 @@ phases:
       -docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/sbm-server-registry:sbm-server
 
 artifacts:
-files: taskdefinition.json
+  files: taskdefinition.json
